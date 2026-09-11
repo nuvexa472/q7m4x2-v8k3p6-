@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.big-heart {
+    font-size: 70px;
+    color: #ef7585;
+    cursor: pointer;
+}
+
+.big-heart.pop {
+    animation: pop 0.5s;
+}
+
+@keyframes pop {
+    50% {
+        transform: scale(1.5);
+    }
+}
+body {
+    margin: 0;
+    background: #ead3ce;
+    color: #552027;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    max-width: 393px;
+    margin: auto;
+    padding: 70px 28px;
+    background: #fff7f3;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 52px;
+    margin: 0 0 20px;
+}
+
+h2 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+p {
+    color: #493b3b;
+    line-height: 1.6;
+}
+
+.hero {
+    height: 100vh;
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(#0005, #0007),
+        url("Pics/CUTE.JPG") center/cover;
+
+    color: white;
+}
+
+.hero p {
+    color: white;
+}
+
+.button,
+button {
+    display: inline-block;
+    background: #8b2635;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    padding: 14px 25px;
+    margin: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* QUIZ */
+
+.quiz button {
+    width: 100%;
+    margin: 7px 0;
+    transition: 0.3s;
+}
+
+.quiz button:hover {
+    transform: scale(1.03);
+}
+
+.quiz button:disabled {
+    color: white;
+    opacity: 1;
+    cursor: default;
+}
+
+#quiz-text {
+    font-weight: bold;
+    margin-top: 15px;
+}
+.button,
+button {
+    display: inline-block;
+    background: #8b2635;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    padding: 14px 25px;
+    margin: 8px;
+    cursor: pointer;
+}
+.small {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.polaroid {
+    background: white;
+    padding: 10px 10px 25px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0 8px 20px #0002;
+    transform: rotate(-3deg);
+}
+
+.polaroid img {
+    width: 100%;
+}
+
+.polaroid span {
+    display: block;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.timeline {
+    text-align: left;
+    border-left: 2px solid #9b3947;
+    padding-left: 25px;
+}
+
+.timeline div {
+    margin-bottom: 35px;
+}
+
+.timeline b {
+    color: #8b2635;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 25px 0;
+    box-shadow: 0 5px 20px #0001;
+}
+
+.card button {
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    border: 8px solid white;
+    box-shadow: 0 5px 15px #0002;
+}
+
+.gallery img:nth-child(odd) {
+    transform: rotate(-3deg);
+}
+
+.gallery img:nth-child(even) {
+    transform: rotate(3deg);
+}
+
+details {
+    background: #f7dfda;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.heart {
+    font-size: 55px;
+    color: #e77582;
+}
+
+.big-heart {
+    font-size: 70px;
+    color: #ef7585;
+    cursor: pointer;
+}
+
+.facts div {
+    background: white;
+    padding: 18px;
+    margin: 12px 0;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.facts b,
+.facts span {
+    display: block;
+}
+
+.facts span {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.end {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.handwriting {
+    font-style: italic;
+    font-size: 22px;
+}
+
+@media (max-width: 400px) {
+
+    section {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+}
